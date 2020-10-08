@@ -44,10 +44,9 @@ On the About Me page in the second row, along the left-hand side contains a card
               </div>
             </div>
           </div>
-
- JavaScript was added to the html file to redirect users when the element is clicked, this occurs through an onclick function. 
 ```
-    function myLinkedIn() {
+ JavaScript was added to the html file to redirect users when the element is clicked, this occurs through an onclick function. 
+```    function myLinkedIn() {
   location.replace("https://www.linkedin.com/in/brooklyn-minor-742245109/")
 }
    function myGitHub() {
@@ -56,6 +55,5 @@ On the About Me page in the second row, along the left-hand side contains a card
     function myGitLab() {
   location.replace("https://utoronto.bootcampcontent.com/brooklynminor")
 }
-
 ```
 The file is pushed to the repository through GitBash
