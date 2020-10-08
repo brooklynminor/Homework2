@@ -1,5 +1,5 @@
 Brooklyn Minor
-#Homework 2: Portfolio
+                                                                  # Homework 2: Portfolio
 The purpose of this project was to implement Bootstrap elements into an html file and manipulate the display using CSS to our own discretion.
 Three files were made separately: Portfolio.html, AboutMe.html and ContactInformation.html. Each of the aforementioned files contain CSS and JavaScript depending on the finale display of the webpage. 
 Each page allows access to one another through the toggle icon in the navigation bar. JavaScript was added to run those functions. An onclick function is inserted into the button tag to define the event. 
