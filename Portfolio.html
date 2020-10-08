@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+  <!--Navbar which has been retrieved from bootstrap and modified to implement the name of the current page in the left corner wrapped withing the container-->
+  <div class="container">
+        <div class="fixed-top">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Brooklyn Minor</a>
+              <button class="navbar-toggler" onclick="myClick()" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="text-align: left; float: left; left: 20px">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          </nav>
+          <div class="navbar-toggler-icon-content" id="myDropdown">
+              <a class="nav-link" href="AboutMe.html">About Me</a>
+              <a class="nav-link" href="Portfolio.html">Portfolio</a>
+              <a class="nav-link" href="ContactInformation.html">Contact Information</a>
+          </div>
+      </div>
+  </div>
+  
+<div class="container">
+  <h2>Portfolio</h2>
+ <div class="row">
+    <div class="card-deck">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+        <div class="card-body">
+          <h5 class="card-title">Project Title</h5>
+          <p class="card-text">Project Content</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date of Fabrication</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+        <div class="card-body">
+          <h5 class="card-title">Project Title</h5>
+          <p class="card-text">Project Content</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date of Fabrication</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+        <div class="card-body">
+          <h5 class="card-title">Project Title</h5>
+          <p class="card-text">Project Content</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date of Fabrication</small>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="card-deck" id="card-deck">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+        <div class="card-body">
+          <h5 class="card-title">Project Title</h5>
+          <p class="card-text">Project Content</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date of Fabrication</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+        <div class="card-body">
+          <h5 class="card-title">Project Title</h5>
+          <p class="card-text">Project Content</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date of Fabrication</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+        <div class="card-body">
+          <h5 class="card-title">Project Title</h5>
+          <p class="card-text">Project Content</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date of Fabrication</small>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+ <footer class="sticky-bottom">
+   <h4>University of Toronto: Full-Stack Development</h4>
+ </footer>
+
+  <style>
+   /*modified to center cards with header*/
+.card-deck{
+  padding-top: 50px; 
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px;
+ 
+}
+
+#card-deck{
+  padding-top: 50px; 
+  padding-bottom: 100px;
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px;
+}
+/* Margin creates a none existing border around image and text cards*/
+.card{
+  margin: 0 auto;
+  float: none; 
+  margin-bottom: 10px;
+}
+
+footer{
+  padding: 7px;
+  background-color: DarkSalmon;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  font-family: Acumin Pro Wide light;
+  padding-top: 100px;
+}
+
+h4{
+  font-size: 13px;
+  font-family: Acumin Pro Wide Thin;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar-toggler-icon .navbar-toggler {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar-toggler-icon-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.navbar-toggler-icon-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar-toggler-icon-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+  </style>
+  
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myClick() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.navbar-toggler-icon')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+    
+</body>
+</html>

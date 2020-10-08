@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>About Me</title>
+</head>
+<body>
+    <!--Navbar which has been retrieved from bootstrap and modified to implement the name of the current page in the left corner wrapped withing the container,-->
+    <div class="container">
+        <div class="fixed-top">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Brooklyn Minor</a>
+                <button class="navbar-toggler" onclick="myClick()" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="text-align: left; float: left; left: 20px">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </nav>
+            <div class="navbar-toggler-icon-content" id="myDropdown">
+                <a class="nav-link" href="AboutMe.html">About Me</a>
+                <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                <a class="nav-link" href="ContactInformation.html">Contact Information</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="https://via.placeholder.com/200x200.png?text=200x200" class="card-img-top" alt="200x200">
+            </div>
+            <div class="col-sm-5">
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique,
+                    nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae
+                    felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
+                    non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus,
+                    luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et
+                    neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas
+                    dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
+                    posuere sem congue a.
+                </p>
+            </div>
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <div class="card-header">
+                Networking
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="nav-link" onclick="myLinkedIn()"href="https://www.linkedin.com/in/brooklyn-minor-742245109/">LinkedIn</li>
+                <li class="nav-link" onclick="myGitHub()" href="https://github.com/brooklynminor">GitHub</li>
+                <li class="nav-link" onclick="myGitLab()" href="https://utoronto.bootcampcontent.com/brooklynminor">Gitlab</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  
+<!--footer spans the bottom of the website-->
+    <footer class="fixed-bottom">
+        <h4>University of Toronto: Full-Stack Development</h4>
+    </footer>
+</body>
+
+<style>
+/* the CSS attributes will allow the toggle box to be hidden until the function is selected */
+footer{
+  padding: 7px;
+  background-color: DarkSalmon;
+  width: 100%;
+}
+
+h2{
+  float: center;
+  font-family: Acumin Pro Wide light;
+  padding-top: 120px
+}
+
+.card{
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-bottom: 100px ;
+}
+
+h4{
+  font-size: 13px;
+  font-family: Acumin Pro Wide Thin;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+
+img{
+  padding-top: 120px;
+}
+
+p{
+  padding-bottom: 50px; 
+  margin-top: 25px;
+            
+}
+
+.navbar-toggler-icon {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar-toggler-icon .navbar-toggler {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar-toggler-icon-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.navbar-toggler-icon-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar-toggler-icon-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myClick() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.navbar-toggler-icon')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    // functions from line 172-180 allows user to click link that will redirect them to listed page
+    function myLinkedIn() {
+  location.replace("https://www.linkedin.com/in/brooklyn-minor-742245109/")
+}
+   function myGitHub() {
+  location.replace("https://github.com/brooklynminor")
+}
+    function myGitLab() {
+  location.replace("https://utoronto.bootcampcontent.com/brooklynminor")
+}
+    </script>
+</html>
